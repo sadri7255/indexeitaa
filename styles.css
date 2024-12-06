@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IranianSans', sans-serif;
+    background: linear-gradient(135deg, #4caf50, #2196f3);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.header-box {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    margin-bottom: 40px;
+}
+
+.header-box h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1.5;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.highlight {
+    color: #ffeb3b;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ai-card {
+    background: #ff6347;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.ai-card:hover {
+    background: #ff4500;
+}
+
+.updating-card {
+    background: #2196f3;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.updating-card:hover {
+    background: #1e88e5;
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.icon span {
+    font-size: 50px;
+}
+
+.icon:hover {
+    transform: rotate(360deg);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .header-box h1 {
+        font-size: 20px;
+    }
+
+    .icon {
+        font-size: 50px;
+    }
+
+    .icon span {
+        font-size: 40px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
